@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-cyan: 0 174 239;
+    --color-red: 239 68 68;
+    --color-yellow: 245 158 11;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased font-sans selection:bg-sky-500/20 selection:text-sky-700;
+  }
+}
+
+/* Custom glow and accents based on Casa Isaías brand */
+.bg-gradient-isaias {
+  background: linear-gradient(135deg, #00AEEF 0%, #0284c7 35%, #EF4444 80%, #F59E0B 100%);
+}
+
+.text-gradient-isaias {
+  background: linear-gradient(135deg, #00AEEF 0%, #EF4444 60%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge-glow-cyan {
+  box-shadow: 0 0 20px -5px rgba(0, 174, 239, 0.4);
+}
+
+.badge-glow-red {
+  box-shadow: 0 0 20px -5px rgba(239, 68, 68, 0.4);
+}
+
+.badge-glow-yellow {
+  box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.4);
+}
